@@ -1,0 +1,78 @@
+/* Styles pour les créneaux horaires */
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.time-slot {
+  min-width: 70px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.time-slot.active {
+  background-color: #333 !important;
+  color: white !important;
+  border-color: #333 !important;
+  font-weight: bold;
+}
+
+.time-slot:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.time-slot:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+/* Styles spécifiques pour les créneaux de dîner du jeudi */
+.dinner-slots-container h6 {
+  display: flex;
+  align-items: center;
+}
+
+.dinner-slots-container h6::after {
+  content: "Jeudi uniquement";
+  font-size: 0.75rem;
+  font-weight: normal;
+  margin-left: 8px;
+  padding: 2px 6px;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Indicateur d'indisponibilité */
+.unavailable-indicator {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-top: 8px;
+}
+
+/* Animation pour les créneaux en surbrillance */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(74, 109, 167, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(74, 109, 167, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(74, 109, 167, 0);
+  }
+}
+
+.time-slot.highlight {
+  animation: pulse 1.5s infinite;
+}

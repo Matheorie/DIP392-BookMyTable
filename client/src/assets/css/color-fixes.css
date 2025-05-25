@@ -1,0 +1,321 @@
+/* Améliorer le contraste pour les icônes sur les fonds beige */
+.icon-container.bg-info.bg-opacity-10 .text-info {
+  color: #333 !important; /* Gris foncé pour contraster avec le fond beige */
+}
+
+/* Aussi, modifier le fond beige lui-même pour être plus contrasté */
+.icon-container.bg-info.bg-opacity-10 {
+  background-color: rgba(190, 161, 118, 0.2) !important;
+}/* Correction pour les liens standard dans le footer */
+.footer a:not(.btn), 
+footer a:not(.btn),
+.sidebar a:not(.btn),
+.list-unstyled a:not(.btn) {
+  color: white !important;
+}
+
+.footer a:not(.btn):hover, 
+footer a:not(.btn):hover,
+.sidebar a:not(.btn):hover,
+.list-unstyled a:not(.btn):hover {
+  color: rgb(190, 161, 118) !important; /* Beige au survol */
+  text-decoration: underline;
+}
+
+/* Styles spécifiques pour les boutons dans le footer */
+.footer .btn-outline-light,
+footer .btn-outline-light {
+  color: white !important;
+  border-color: white !important;
+}
+
+.footer .btn-outline-light:hover,
+footer .btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: rgb(190, 161, 118) !important; /* Beige au survol */
+  border-color: rgb(190, 161, 118) !important;
+}
+
+/* Pour le bouton "Découvrir notre menu" sur la page d'accueil */
+.hero .btn-outline-light {
+  color: white !important;
+  border-color: white !important;
+}
+
+.hero .btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: rgb(190, 161, 118) !important; /* Beige au survol */
+  border-color: rgb(190, 161, 118) !important;
+}/* Correction pour les icônes des boutons */
+.btn-secondary .fa-sync-alt,
+button[variant="secondary"] .fa-sync-alt {
+  color: #333 !important;
+}
+
+.btn-outline-danger .fa-trash,
+button[variant="outline-danger"] .fa-trash,
+.btn-danger .fa-trash,
+button[variant="danger"] .fa-trash {
+  color: #dc3545 !important; /* Rouge Bootstrap */
+}
+
+/* Lorsque le bouton est hover, l'icône devient blanche */
+.btn-outline-danger:hover .fa-trash,
+button[variant="outline-danger"]:hover .fa-trash {
+  color: white !important;
+}/* Styles spécifiques pour la navbar et le header */
+.navbar {
+  background-color: #333 !important;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.navbar .nav-link:hover {
+  color: rgb(190, 161, 118) !important; /* Couleur beige au survol */
+}
+
+.navbar .nav-link.active {
+  color: rgb(190, 161, 118) !important; /* Couleur beige pour les éléments actifs */
+}
+
+/* Pour les dropdowns dans la navbar */
+.navbar .dropdown-menu {
+  background-color: #333 !important;
+}
+
+.navbar .dropdown-item {
+  color: white !important;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: rgba(190, 161, 118, 0.2) !important;
+  color: rgb(190, 161, 118) !important;
+}
+
+.navbar .dropdown-item.active {
+  background-color: rgb(190, 161, 118) !important;
+  color: white !important;
+}/* Modifications pour App.css */
+
+/* Modifier les couleurs des cartes et des boutons */
+/* Corrections pour les boutons "Nouvelle réservation" et boutons d'action primaires */
+.btn-primary, 
+button[variant="primary"],
+.btn[variant="primary"],
+a.btn-primary, 
+a.btn[variant="primary"],
+[class*="btn-primary"] {
+  background-color: #333 !important;
+  border-color: #333 !important;
+  color: white !important;
+}
+
+.btn-primary:hover, 
+button[variant="primary"]:hover,
+.btn[variant="primary"]:hover,
+a.btn-primary:hover, 
+a.btn[variant="primary"]:hover,
+[class*="btn-primary"]:hover {
+  background-color: #555 !important;
+  border-color: #555 !important;
+  color: white !important;
+}
+
+/* Correction pour la règle générale des boutons 
+   Nous permettons aux boutons outline d'avoir leur propre couleur de texte */
+.btn:not(.btn-outline-primary):not(.btn-outline-secondary):not(.btn-light):not(.btn-link) {
+  color: white !important;
+}
+
+/* Pour les boutons outline et secondaires */
+.btn-outline-primary, 
+.btn-secondary,
+button[variant="outline-primary"],
+.btn[variant="outline-primary"],
+button[variant="secondary"],
+.btn[variant="secondary"] {
+  border-color: #333 !important;
+  color: #333 !important;
+}
+
+.btn-outline-primary:hover, 
+.btn-secondary:hover,
+button[variant="outline-primary"]:hover,
+.btn[variant="outline-primary"]:hover,
+button[variant="secondary"]:hover,
+.btn[variant="secondary"]:hover {
+  background-color: #333 !important;
+  border-color: #333 !important;
+  color: white !important;
+}
+
+/* Headers des cartes */
+.card-header.bg-primary {
+  background-color: #333 !important;
+}
+
+/* Modification de la pagination pour avoir les numéros en blanc */
+.pagination .page-link {
+  color: #333 !important;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #333 !important;
+  border-color: #333 !important;
+  color: white !important;
+}
+
+/* Pour les numéros de page */
+.pagination .page-link:hover {
+  background-color: #f8f9fa;
+  color: #333 !important;
+}
+
+/* S'assurer que les flèches de pagination sont également visibles */
+.pagination .page-item:not(.active) .page-link {
+  color: #333 !important;
+}
+
+/* Remplacer les icônes et textes en bleu */
+.text-primary, .text-info {
+  color: rgb(190, 161, 118) !important;
+}
+
+/* Couleur par défaut pour les badges "info" (tables, etc.) */
+.badge.bg-info {
+  background-color: rgb(190, 161, 118) !important; /* Beige pour la plupart des badges */
+  color: white !important;
+}
+
+/* Solution la plus simple: dans le code React, utilisez "bg-secondary" au lieu de "bg-info" 
+   pour les badges de statut "Terminée" */
+
+/* Si vous ne pouvez pas modifier le code React, les sélecteurs suivants peuvent aider,
+   mais ils nécessitent que le contenu ou les attributs des éléments soient cohérents */
+
+/* Créez une règle spécifique dans votre composant ReservationsList ou équivalent */
+[status="completed"] .badge,
+.badge[data-status="completed"],
+td:nth-child(5) .badge:contains("Terminée") {
+  background-color: #6c757d !important; /* Gris pour le statut "Terminée" */
+  color: white !important;
+}
+
+/* Modification correspondante pour l'état des réservations */
+.reservation-card.completed {
+  border-left-color: #6c757d !important;
+}
+
+/* Remplacer les backgrounds, en gardant la distinction pour "info" */
+.bg-primary {
+  background-color: #333 !important;
+  color: white !important;
+}
+
+.bg-info:not(.badge):not(span) {
+  background-color: rgb(190, 161, 118) !important;
+  color: white !important;
+}
+
+/* Icônes et éléments d'interface */
+.icon-container.bg-primary, .icon-container.bg-info {
+  background-color: rgba(190, 161, 118, 0.2) !important;
+}
+
+.icon-container .text-primary, .icon-container .text-info {
+  color: rgb(190, 161, 118) !important;
+}
+
+/* Pour les alertes informatives */
+.alert-info {
+  background-color: rgba(190, 161, 118, 0.2) !important;
+  border-color: rgb(190, 161, 118) !important;
+  color: #725c32 !important;
+}
+
+/* Modifications pour timeSlots.css */
+
+/* Modifier les créneaux horaires */
+.time-slot.active {
+  background-color: #333 !important;
+  color: white !important;
+  border-color: #333 !important;
+}
+
+.time-slot:hover:not(:disabled) {
+  border-color: #333 !important;
+}
+
+/* Animation de surbrillance pour les créneaux */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(51, 51, 51, 0.4); /* #333 avec opacité */
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(51, 51, 51, 0); /* #333 transparente */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(51, 51, 51, 0); /* #333 transparente */
+  }
+}
+
+/* Modifications spécifiques pour la navigation */
+.nav-pills .nav-link.active {
+  background-color: #333 !important;
+  color: white !important;
+}
+
+/* Correction pour les onglets/rubriques sélectionnés */
+.nav-tabs .nav-link.active,
+.nav-pills .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: rgb(190, 161, 118) !important; /* Beige pour les rubriques actives */
+  background-color: transparent !important;
+  border-color: rgb(190, 161, 118) !important;
+}
+
+/* Correction spécifique pour les rubriques dans la page Settings */
+#settings-tabs .nav-link.active {
+  background-color: transparent !important; 
+  color: rgb(190, 161, 118) !important; /* Beige */
+  border-color: rgb(190, 161, 118) !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #333 !important;
+  color: white !important;
+}
+
+/* Liens dans toute l'application sauf dans la navbar et footer */
+a:not(.navbar a):not(.footer a):not(footer a):not(.sidebar a) {
+  color: #333 !important;
+}
+
+a:not(.navbar a):not(.footer a):not(footer a):not(.sidebar a):hover {
+  color: rgb(190, 161, 118) !important;
+}
+
+/* Formulaires focus */
+.form-control:focus {
+  border-color: #333 !important;
+  box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.25) !important;
+}
+
+/* Pour la page 404 */
+.btn-outline-primary {
+  color: #333 !important;
+  border-color: #333 !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:focus {
+  background-color: #333 !important;
+  color: white !important;
+  border-color: #333 !important;
+}
+
+/* Pour l'animation des créneaux horaires */
+.time-slot.highlight {
+  animation: pulse 1.5s infinite;
+}

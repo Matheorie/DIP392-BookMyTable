@@ -1,0 +1,411 @@
+/* client/src/assets/css/App.css */
+
+:root {
+    --primary-color: #333;
+    --secondary-color: rgb(190, 161, 118);
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: rgb(190, 161, 118);
+  }
+  
+  /* Base styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: #f8f9fa;
+  }
+  
+  /* Layout */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 2rem 0;
+  }
+  
+  /* Header */
+  .navbar {
+    background-color: #333;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    color: white;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: rgb(190, 161, 118);
+  }
+  
+  .nav-link.active {
+    color: rgb(190, 161, 118) !important;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 2rem 0;
+    margin-top: auto;
+  }
+  
+  .footer h5 {
+    color: var(--secondary-color);
+  }
+  
+  /* Containers and sections */
+  .section {
+    padding: 4rem 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .section-subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--dark-color);
+    font-weight: normal;
+  }
+  
+  /* Cards */
+  .card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 2rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #b59325;
+    border-color: #b59325;
+    color: white;
+  }
+  
+  /* Forms */
+  .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(74, 109, 167, 0.25);
+  }
+  
+  .form-label {
+    font-weight: 500;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .error-message {
+    color: var(--danger-color);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .custom-alert {
+    background-color: rgb(190, 161, 118, 0.2); /* Couleur beige avec transparence */
+    border-color: rgb(190, 161, 118);
+    color: #725c32; /* Texte plus foncé pour le contraste */
+  }
+
+  .me-2 {
+    color: rgb(190, 161, 118);
+  }
+
+  .custom-btn {
+    background-color: #333 !important;
+    border-color: #333 !important;
+    color: white !important;
+  }
+  
+  .custom-btn:hover {
+    background-color: #777 !important;
+    border-color: #777 !important;
+  }
+  
+  .custom-btn:disabled {
+    background-color: rgba(190, 161, 118, 0.65) !important;
+    border-color: rgba(190, 161, 118, 0.65) !important;
+  }
+
+  /* Reservation cards */
+  .reservation-card {
+    border-left: 5px solid var(--primary-color);
+  }
+  
+  .reservation-card.confirmed {
+    border-left-color: var(--success-color);
+  }
+  
+  .reservation-card.pending {
+    border-left-color: var(--warning-color);
+  }
+  
+  .reservation-card.cancelled {
+    border-left-color: var(--danger-color);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 1rem 0;
+    }
+    
+    .section {
+      padding: 2rem 0;
+    }
+  }
+  
+  /* Restaurant section */
+  .restaurant-info {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .restaurant-hours {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .restaurant-hours li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #ddd;
+  }
+  
+  .restaurant-hours li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Availability slots */
+  .time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  
+  .time-slot {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .time-slot:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .time-slot.selected {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+  }
+  
+  .time-slot.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #f0f0f0;
+  }
+  
+  /* Admin dashboard */
+  .dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-card {
+    padding: 1.5rem;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-card .stat-title {
+    font-size: 0.875rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  /* Table grid for admin */
+  .table-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .table-item {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-item.available {
+    border: 2px solid var(--success-color);
+  }
+  
+  .table-item.occupied {
+    border: 2px solid var(--danger-color);
+  }
+  
+  .table-item.reserved {
+    border: 2px solid var(--warning-color);
+  }
+  
+  .table-item.maintenance {
+    border: 2px solid #777;
+  }
+  
+  /* Calendar */
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+  
+  .calendar-container {
+    margin-bottom: 2rem;
+  }
+  
+  /* Reservation summary */
+  .reservation-summary {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #ddd;
+  }
+  
+  .summary-item:last-child {
+    border-bottom: none;
+  }
+
+  /* Correction pour le z-index du DatePicker dans la page Tables */
+  .react-datepicker-popper {
+    z-index: 9999 !important;
+  }
+
+  .react-datepicker {
+    z-index: 9999 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+    border: 1px solid #ced4da !important;
+  }
+
+  /* S'assurer que le wrapper du DatePicker a une position relative */
+  .react-datepicker-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Pour les modals et cards qui pourraient interferer */
+  .card {
+    position: relative;
+  }
+
+  .table-responsive {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Style spécifique pour les filtres dans la page Tables */
+  .card-body .react-datepicker-wrapper {
+    z-index: 10;
+  }
+
+  .card-body .react-datepicker-popper {
+    z-index: 10000 !important;
+  }
+
+  /* Pour s'assurer que le calendrier est toujours visible */
+  .react-datepicker,
+  .react-datepicker__month-container,
+  .react-datepicker__day-names,
+  .react-datepicker__week {
+    z-index: inherit;
+  }
+
+  /* Style pour améliorer l'apparence du DatePicker */
+  .react-datepicker__input-container input {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .react-datepicker__input-container input:focus {
+    border-color: #333;
+    box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.25);
+    outline: 0;
+  }

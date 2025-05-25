@@ -1,0 +1,53 @@
+{
+  "name": "dip392-bookmytable",
+  "version": "1.0.0",
+  "description": "Restaurant reservation management system for Restaurant Cazingue",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "test": "node db-test.js run-all-tests",
+    "test:help": "node db-test.js help",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "keywords": [
+    "restaurant",
+    "reservation",
+    "booking",
+    "nodejs",
+    "react",
+    "mysql",
+    "express"
+  ],
+  "author": "DIP392 BookMyTable Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.4",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.0",
+    "colors": "^1.4.0",
+    "cli-table": "^0.3.11",
+    "moment": "^2.29.4"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matheorie/DIP392-BookMyTable.git"
+  }
+}
