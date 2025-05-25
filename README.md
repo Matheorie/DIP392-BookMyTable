@@ -260,9 +260,9 @@ Our team followed an **Agile methodology** with iterative development cycles:
 - **Testing Strategy**: Database testing scripts and manual testing protocols
 - **Documentation**: Comprehensive README and inline code documentation
 
-## Demo Video
+## Presentation Video Link
 
-[Demo video link will be available here]
+https://drive.google.com/file/d/1fr1qtyezFvFEd45fqoKL7ecXNNmcTJap/view?usp=sharing
 
 ## Academic Context
 
@@ -279,10 +279,6 @@ This project represents a **real-world software development experience** where o
 ## License
 
 This project is developed for educational purposes as part of the DIP392 course.
-
-## Demo Video
-
-**Link to demo video**: 
 
 ---
 
