@@ -273,7 +273,7 @@ This project represents a **real-world software development experience** where o
 - Delivered a production-ready application within academic constraints
 
 **Course**: DIP392 - Applied System Software  
-**Institution**: RTU - Riga Technical University
+**Institution**: RTU - Riga Technical University  
 **Academic Year**: 2024-2025
 
 ## License
